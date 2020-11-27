@@ -20,6 +20,10 @@
             </form>
             <p class="error-msg" *ngIf="errorMsg">Email or Password are incorrect</p>
         </mat-card-content>
+        <mat-card-actions class="actions-footer">
+            <p>Don't have an account?</p>
+            <button mat-button (click)="goSignUp()">Sign up!</button>
+        </mat-card-actions>
     </mat-card>
 </div>
     

@@ -24,3 +24,10 @@
 .error-msg {
     color: red;
 }
+.actions-footer {
+    display: flex;
+    flex-direction: row;
+    button {
+        margin: 0 6px;
+    }
+}

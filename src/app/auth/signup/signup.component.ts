@@ -57,4 +57,8 @@ export class SignupComponent implements OnInit {
       }) 
   }
 
+  goLogIn() {
+    this.router.navigate(['/auth/login']);
+  }
+
 }

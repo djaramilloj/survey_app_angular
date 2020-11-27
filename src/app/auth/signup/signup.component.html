@@ -26,5 +26,9 @@
             </form>
             <p class="error-msg" *ngIf="errorMsg">Email already exists</p>
         </mat-card-content>
+        <mat-card-actions class="actions-footer">
+            <p>Already have an account?</p>
+            <button mat-button (click)="goLogIn()">Log In!</button>
+        </mat-card-actions>
     </mat-card>
 </div>
