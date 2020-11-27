@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { pcBrand } from '../models/user.model';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -8,8 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class FetchDataService {
 
-  // private api_url = "https://survey-api-ontop.herokuapp.com"
-  private api_url = "http://localhost:8080"
+  private api_url = "https://survey-api-ontop.herokuapp.com"
 
   constructor(private httpClient: HttpClient) { }
 

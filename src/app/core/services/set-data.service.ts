@@ -7,8 +7,7 @@ import { userSignUp, userLogIn, Survey } from '../../core/models/user.model';
   providedIn: 'root'
 })
 export class SetDataService {
-  // private api_url = "https://survey-api-ontop.herokuapp.com"
-    private api_url = "http://localhost:8080"
+  private api_url = "https://survey-api-ontop.herokuapp.com"
 
   constructor(private httpClient: HttpClient) { }
 
