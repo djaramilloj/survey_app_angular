@@ -1,0 +1,30 @@
+<div class="main-container">
+    <mat-card class="signup-card">
+        <mat-card-header>
+            <mat-card-title>Sign Up</mat-card-title>
+            <mat-card-subtitle>Please provide the following data</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <!-- Signup Form -->
+            <form class="form-fields" [formGroup]="signUpForm" (ngSubmit)="signUp()">
+                <mat-form-field>
+                    <mat-label>Full Name</mat-label>
+                    <input matInput type="text" formControlName="name">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" formControlName="email">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>password</mat-label>
+                    <input matInput type="password" formControlName="password">
+                </mat-form-field>
+
+                <button mat-stroked-button [disabled]="signUpForm.invalid" class="signup-button">Sign Up!</button>
+            </form>
+            <p class="error-msg" *ngIf="errorMsg">Email already exists</p>
+        </mat-card-content>
+    </mat-card>
+</div>

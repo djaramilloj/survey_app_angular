@@ -1,0 +1,22 @@
+.main-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns:  10% auto 10%;
+    grid-template-rows:  10% auto 10%;
+}
+.home-card {
+    background-color: #07145C;
+    max-width: 80%;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    place-self: center;
+}
+.home-card__content {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.button-opt {
+    background-color: #1076F6; 
+}

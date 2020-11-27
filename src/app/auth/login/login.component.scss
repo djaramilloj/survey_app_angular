@@ -1,0 +1,26 @@
+.main-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns:  10% auto 10%;
+    grid-template-rows:  10% auto 10%;
+}
+.login-card {
+    background-color: #07145C;
+    max-width: 80%;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    place-self: center;
+}
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    mat-form-field {
+        margin: 6px 0;
+    }
+}
+.signup-button {
+    background-color: #1076F6;
+}
+.error-msg {
+    color: red;
+}

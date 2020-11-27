@@ -1,0 +1,24 @@
+.main-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns:  10% auto 30%;
+    grid-template-rows:  10% auto 10%;
+}
+.record-card {
+    background-color: #07145C;
+    width: 800px;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    place-self: center;
+}
+.table-results {
+    width: 100%;
+}
+.alternate-space {
+    padding: 15px;
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+}
+.table-results__brand {
+    width: 100%;
+}

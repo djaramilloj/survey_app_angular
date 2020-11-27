@@ -1,0 +1,25 @@
+<div class="main-container">
+    <mat-card class="login-card">
+        <mat-card-header>
+            <mat-card-title>Log In</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <!-- Login Form -->
+            <form class="form-fields" [formGroup]="logInForm" (ngSubmit)="logIn()">
+                <mat-form-field>
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" formControlName="email">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>password</mat-label>
+                    <input matInput type="password" formControlName="password">
+                </mat-form-field>
+
+                <button mat-stroked-button [disabled]="logInForm.invalid" class="signup-button">Log In!</button>
+            </form>
+            <p class="error-msg" *ngIf="errorMsg">Email or Password are incorrect</p>
+        </mat-card-content>
+    </mat-card>
+</div>
+    
